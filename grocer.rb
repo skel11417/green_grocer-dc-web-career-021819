@@ -8,7 +8,7 @@ def consolidate_cart(cart)
       if output.has_key?(name)
         output[name][:count] += 1 
       else 
-        
+        output[name] =
 end
 
 def apply_coupons(cart, coupons)
