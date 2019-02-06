@@ -2,7 +2,7 @@ require 'pry'
 
 def consolidate_cart(cart)
   binding.pry
-  
+  items = cart[0]
 end
 
 def apply_coupons(cart, coupons)
