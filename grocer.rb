@@ -8,6 +8,7 @@ def consolidate_cart(cart)
       if output.has_key?(name)
         output[name][:count] += 1
       else 
+        binding.pry 
         output[name] = info
       end
     end
