@@ -20,11 +20,11 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     if cart.has_key(coupon)
       
-    cart.each do |item|
-      binding.pry 
-      if item.has_key?(coupon[:item])
-        output << "fuck i'm tired"
-      end
+    # cart.each do |item|
+    #   binding.pry 
+    #   if item.has_key?(coupon[:item])
+    #     output << "fuck i'm tired"
+    #   end
     end
   end
 end
