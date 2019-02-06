@@ -10,6 +10,9 @@ def consolidate_cart(cart)
       else 
         output[name] = info
       end
+    end
+  end
+  output 
 end
 
 def apply_coupons(cart, coupons)
