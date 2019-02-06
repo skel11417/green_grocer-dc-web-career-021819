@@ -41,6 +41,7 @@ end
 def apply_clearance(cart)
   cart.each do |k, v|
     if v[:clearance] == true
+      current_price = v[:price]
       v[:price] = 0
     end
   end
