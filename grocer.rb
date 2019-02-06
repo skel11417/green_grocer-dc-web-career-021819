@@ -40,6 +40,7 @@ end
 
 def apply_clearance(cart)
   cart.each do |k, v|
+    
   end
   binding.pry
 end
