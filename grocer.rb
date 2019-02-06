@@ -10,7 +10,7 @@ def consolidate_cart(cart)
       else 
         # binding.pry 
         output[name] = info
-        output[:count] = 1
+        output[name][:count] = 1
       end
     end
   end
