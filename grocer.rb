@@ -28,7 +28,7 @@ def apply_coupons(cart, coupons)
         :count => 1
       }
       # binding.pry
-      cart[item_key][:count] -= coupon[:num]
+      # cart[item_key][:count] -= coupon[:num]
     end
   end
   output
