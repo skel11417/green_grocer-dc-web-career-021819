@@ -18,7 +18,7 @@ end
 def apply_coupons(cart, coupons)
   output = {}
   coupons.each do |coupon|
-    if cart.has_key(coupon)
+    if cart.has_key(coupon[:item])
       
     # cart.each do |item|
     #   binding.pry 
