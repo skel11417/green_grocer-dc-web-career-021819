@@ -20,7 +20,7 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     cart.each do |item|
       if item.has_key?(coupon[:item])
-        
+        output << 
     
   # binding.pry
   # cart
