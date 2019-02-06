@@ -21,6 +21,9 @@ def apply_coupons(cart, coupons)
     cart.each do |item|
       if item.has_key?(coupon[:item])
         output << "fuck i'm tired"
+      end
+    end
+  end
     
   # binding.pry
   # cart
