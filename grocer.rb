@@ -18,23 +18,7 @@ end
 def apply_coupons(cart, coupons)
   output = {}
   coupons.each do |coupon|
-    item_key = coupon[:item]
-    if cart.has_key?(item_key)
-      new_item_key = "#{item_key} W/COUPON"
-      if !(output.has_key?(new_item_key))
-        output[new_item_key] = {
-          :price => coupon[:cost],
-          :clearance => cart[item_key][:clearance]
-        }
-      else
-        if output[new_item_key].has_key?(:count)
-          output[new_item_key][:count] += 1 
-        else
-          output[new_item_key][:count] = 1
-        end
-        cart[item_key][:count] -= coupon[:num]
-      end
-    end
+ 
   end
   output.merge(cart)
 end
