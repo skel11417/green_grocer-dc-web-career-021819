@@ -4,7 +4,8 @@ def consolidate_cart(cart)
   binding.pry
   output = {}
   cart.each do |item|
-    item.each do
+    item.each do |name, info|
+      
 end
 
 def apply_coupons(cart, coupons)
