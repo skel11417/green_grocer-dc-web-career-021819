@@ -18,7 +18,7 @@ end
 def apply_coupons(cart, coupons)
   output = {}
   coupons.each do |coupon|
-    coupon 
+    coupon[:item]
   binding.pry
   cart
 end
