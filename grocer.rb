@@ -34,6 +34,7 @@ def apply_coupons(cart, coupons)
           output[new_item_key][:count] = 1
         end
         cart[item_key][:count] -= coupon[:num]
+      end
     end
   end
   output.merge(cart)
