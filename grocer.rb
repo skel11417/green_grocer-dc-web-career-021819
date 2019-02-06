@@ -42,7 +42,7 @@ def apply_clearance(cart)
   cart.each do |k, v|
     if v[:clearance] == true
       current_price = v[:price]
-      v[:price] = 0
+      v[:price] = (0.8 * 3.0).round(2)
     end
   end
   binding.pry
