@@ -2,7 +2,7 @@ require 'pry'
 
 def consolidate_cart(cart)
   binding.pry
-  {}
+  output = {}
   cart.each do |item|
     
 end
