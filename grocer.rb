@@ -21,7 +21,7 @@ def apply_coupons(cart, coupons)
     discounted_item = coupon[:item]
     
   # binding.pry
-  cart
+  # cart
 end
 
 def apply_clearance(cart)
