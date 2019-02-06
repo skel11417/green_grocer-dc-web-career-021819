@@ -17,7 +17,7 @@ end
 
 def apply_coupons(cart, coupons)
   output = {}
-  
+  coupons.each do 
   cart
 end
 
