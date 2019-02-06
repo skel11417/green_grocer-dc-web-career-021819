@@ -32,6 +32,7 @@ def apply_coupons(cart, coupons)
     end
   end
   binding.pry
+  output.merge(cart)
   output
 end
 
