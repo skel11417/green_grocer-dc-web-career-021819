@@ -20,7 +20,7 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     if cart.has_key?(coupon[:item])
       new_item_key = "#{coupon[:item]} W/COUPON"
-      output[new_item_key] = 
+      output[new_item_key] = cart[coupon[:item]]
       
     end
   end
