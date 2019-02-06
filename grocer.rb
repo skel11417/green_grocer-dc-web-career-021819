@@ -1,14 +1,12 @@
 require 'pry' 
 
 def consolidate_cart(cart)
-  # binding.pry
   output = {}
   cart.each do |item|
     item.each do |name, info|
       if output.has_key?(name)
         output[name][:count] += 1
       else 
-        # binding.pry 
         output[name] = info
         output[name][:count] = 1
       end
