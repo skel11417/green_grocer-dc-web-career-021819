@@ -45,7 +45,7 @@ def apply_clearance(cart)
       v[:price] = (0.8 * current_price).round(2)
     end
   end
-  # binding.pry
+  cart
 end
 
 def checkout(cart, coupons)
