@@ -22,6 +22,7 @@ def apply_coupons(cart, coupons)
       output << "fuck, i'm tired"
     end
   end
+  output
 end
 
 def apply_clearance(cart)
