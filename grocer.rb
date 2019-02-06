@@ -20,7 +20,6 @@ def apply_coupons(cart, coupons)
   coupon_count = coupons.length
   coupons.each do |coupon|
     item_key = coupon[:item]
-    
     if cart.has_key?(item_key)
       new_item_key = "#{item_key} W/COUPON"
       output[new_item_key] = {
