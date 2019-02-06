@@ -22,7 +22,6 @@ def apply_coupons(cart, coupons)
     if cart.has_key?(item_key)
       new_item_key = "#{item_key} W/COUPON"
       output[new_item_key] = cart[item_key]
-      output[new_item_key]
       
     end
   end
