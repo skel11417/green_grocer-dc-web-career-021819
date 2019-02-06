@@ -27,6 +27,7 @@ def apply_coupons(cart, coupons)
           :price => coupon[:cost],
           :clearance => cart[item_key][:clearance]
         }
+      else
         if output[new_item_key].has_key?(:count)
           output[new_item_key][:count] += 1 
         else
