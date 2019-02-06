@@ -26,7 +26,7 @@ def apply_coupons(cart, coupons)
       output[new_item_key] = {
         :price => coupon[:cost],
         :clearance => cart[item_key][:clearance],
-        :count => coupon_count
+        :count => 1 
       }
       cart[item_key][:count] -= coupon[:num]
     end
