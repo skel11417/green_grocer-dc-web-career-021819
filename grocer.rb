@@ -33,8 +33,6 @@ def apply_coupons(cart, coupons)
   end
   # binding.pry
   output.merge(cart)
-  binding.pry
-  output
 end
 
 def apply_clearance(cart)
