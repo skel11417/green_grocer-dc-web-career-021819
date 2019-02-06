@@ -30,7 +30,7 @@ def apply_coupons(cart, coupons)
       if output[new_item_key].has_key?(:count)
         output[new_item_key][:count] += 1 
       else
-        output[new_item_key][:count] = 1 
+        output[new_item_key][:count] = 
       end
       cart[item_key][:count] -= coupon[:num]
     end
