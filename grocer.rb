@@ -19,7 +19,8 @@ def apply_coupons(cart, coupons)
   output = {}
   coupons.each do |coupon|
     item_key = coupon[:item]
-    coupon_discount = 
+    coupon_discount = 0
+    binding.pry
     if cart.has_key?(item_key)
       new_item_key = "#{item_key} W/COUPON"
       output[new_item_key] = cart[item_key]
