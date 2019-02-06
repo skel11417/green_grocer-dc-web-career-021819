@@ -29,7 +29,6 @@ def apply_coupons(cart, coupons)
       cart[item_key][:count] -= coupon[:num]
     end
   end
-  # binding.pry
   output.merge(cart)
 end
 
