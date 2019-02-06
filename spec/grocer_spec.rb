@@ -57,17 +57,17 @@ describe "Grocer" do
         @avocado_result = apply_coupons(@consolidated_cart, [@avocado_coupon])
       end
 
-      # it "adds a new key, value pair to the cart hash called 'ITEM NAME W/COUPON'" do
-      #   expect(@avocado_result.keys).to include("AVOCADO W/COUPON")
-      # end
+      it "adds a new key, value pair to the cart hash called 'ITEM NAME W/COUPON'" do
+        expect(@avocado_result.keys).to include("AVOCADO W/COUPON")
+      end
 
-      # it "adds the coupon price to the property hash of couponed item" do
-      #   expect(@avocado_result["AVOCADO W/COUPON"][:price]).to eq(5.00)
-      # end
+      it "adds the coupon price to the property hash of couponed item" do
+        expect(@avocado_result["AVOCADO W/COUPON"][:price]).to eq(5.00)
+      end
 
-      # it "adds the count number to the property hash of couponed item" do
-      #   expect(@avocado_result["AVOCADO W/COUPON"][:count]).to eq(1)
-      # end
+      it "adds the count number to the property hash of couponed item" do
+        expect(@avocado_result["AVOCADO W/COUPON"][:count]).to eq(1)
+      end
 
       it "removes the number of discounted items from the original item's count" do
         expect(@avocado_result["AVOCADO"][:price]).to eq(3.00)
