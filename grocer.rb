@@ -6,7 +6,7 @@ def consolidate_cart(cart)
   cart.each do |item|
     item.each do |name, info|
       if output.has_key?(name)
-        output[name][:count] += 1 
+        output[name][:count] += 1
       else 
         output[name] = info
       end
