@@ -2,7 +2,8 @@ require 'pry'
 
 def consolidate_cart(cart)
   binding.pry
-  items = cart[0]
+  cart.each do |item|
+    
 end
 
 def apply_coupons(cart, coupons)
