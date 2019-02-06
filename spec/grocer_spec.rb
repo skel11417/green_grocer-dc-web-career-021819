@@ -69,10 +69,10 @@ describe "Grocer" do
       #   expect(@avocado_result["AVOCADO W/COUPON"][:count]).to eq(1)
       # end
 
-      # it "removes the number of discounted items from the original item's count" do
-      #   expect(@avocado_result["AVOCADO"][:price]).to eq(3.00)
-      #   expect(@avocado_result["AVOCADO"][:count]).to eq(0)
-      # end
+      it "removes the number of discounted items from the original item's count" do
+        expect(@avocado_result["AVOCADO"][:price]).to eq(3.00)
+        expect(@avocado_result["AVOCADO"][:count]).to eq(0)
+      end
 
       # it "remembers if the item was on clearance" do
       #   expect(@avocado_result["AVOCADO W/COUPON"][:clearance]).to eq(true)
