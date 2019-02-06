@@ -147,7 +147,7 @@ describe "Grocer" do
         consol_cart = consolidate_cart([avocado, avocado, avocado, avocado, avocado])
         binding.pry
         two_coupon_result = apply_coupons(consol_cart, [coupon, coupon])
-        
+        binding.pry
         expect(two_coupon_result["AVOCADO"][:count]).to eq(1)
         expect(two_coupon_result["AVOCADO W/COUPON"][:price]).to eq(5.00)
         expect(two_coupon_result["AVOCADO"][:price]).to eq(3.00)
